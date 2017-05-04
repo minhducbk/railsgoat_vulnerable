@@ -40,14 +40,15 @@ group :development, :test do
   gem 'poltergeist'
   gem 'rspec-rails'
   gem 'test-unit'
-  gem 'mysql2'
+  # gem 'mysql2'
 end
 
 group :production do 
   gem 'rails_12factor'
-  gem 'pg'
+  # gem 'pg'
 end
 
+gem 'pg'
 # Gems used only for assets and not required
 # in production environments by default.
 gem 'sass-rails'
