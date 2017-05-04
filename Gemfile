@@ -10,14 +10,13 @@ gem 'rake'
 # Bundle edge Rails instead:
 # gem 'rails', git: 'https://github.com/rails/rails'
 
-gem 'sqlite3'
 gem 'foreman'
 gem 'crack', '0.3.1'
 
 # Pry for Rails, not in dev group in case running via prod/staging @ a training
 gem 'pry-rails'
 
-group :development, :mysql do
+group :development do
   gem 'brakeman'
   gem 'bundler-audit'
   gem 'guard-brakeman'
@@ -34,16 +33,13 @@ end
 
 gem 'simplecov', :require => false, :group => :test
 
-group :development, :test, :mysql do
+group :development, :test do
   gem 'launchy'
   gem 'capybara'
   gem 'database_cleaner'
   gem 'poltergeist'
   gem 'rspec-rails'
   gem 'test-unit'
-end
-
-group :mysql do
   gem 'mysql2'
 end
 
