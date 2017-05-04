@@ -180,6 +180,7 @@ GEM
     notiffany (0.1.1)
       nenv (~> 0.1)
       shellany (~> 0.0)
+    pg (0.20.0)
     poltergeist (1.12.0)
       capybara (~> 2.1)
       cliver (~> 0.3.1)
@@ -220,6 +221,11 @@ GEM
       rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (4.2.7.1)
       actionpack (= 4.2.7.1)
       activesupport (= 4.2.7.1)
@@ -339,12 +345,14 @@ DEPENDENCIES
   launchy
   mailcatcher
   mysql2
+  pg
   poltergeist
   powder
   pry
   pry-rails
   rack-livereload
   rails (= 4.2.7.1)
+  rails_12factor
   rake
   rb-fsevent
   responders
@@ -363,4 +371,4 @@ RUBY VERSION
    ruby 2.3.3p222
 
 BUNDLED WITH
-   1.13.6
+   1.14.6
