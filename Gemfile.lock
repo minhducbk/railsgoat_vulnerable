@@ -359,7 +359,6 @@ DEPENDENCIES
   rspec-rails
   sass-rails
   simplecov
-  sqlite3
   test-unit
   therubyracer
   travis-lint
