@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 #don't upgrade
 gem 'rails', '4.2.7.1'
 
-ruby '2.3.3'
+gem 'pg'
 
 gem 'rake'
 
@@ -48,7 +48,6 @@ group :production do
   # gem 'pg'
 end
 
-gem 'pg'
 # Gems used only for assets and not required
 # in production environments by default.
 gem 'sass-rails'
@@ -89,7 +88,7 @@ gem 'execjs'
 gem 'therubyracer'
 
 # Add SMTP server support using MailCatcher
-gem 'mailcatcher'
+# gem 'mailcatcher'
 
 #For Rails 4.0
 #group :doc do
